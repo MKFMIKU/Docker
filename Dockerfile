@@ -20,4 +20,4 @@ ADD https://raw.githubusercontent.com/MKFMIKU/Docker/master/run.sh /home/run.sh
 
 EXPOSE 5000
 
-CMD ["bash",/home/run.sh"]
+CMD ["sh", "/home/run.sh"]
