@@ -15,4 +15,6 @@ RUN git clone https://github.com/MKFMIKU/DormitoryD.git
 
 RUN cd DormitoryD; npm install --save
 
-RUN node index.js 2>&1 | server.log
+EXPOSE 5000
+
+CMD ["node", "DormitoryD/index.js"]
