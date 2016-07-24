@@ -15,6 +15,8 @@ RUN git clone https://github.com/MKFMIKU/DormitoryD.git
 
 RUN cd DormitoryD; npm install --save
 
+ADD run.sh
+
 EXPOSE 5000
 
 CMD ["run.sh"]
