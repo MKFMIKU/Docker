@@ -12,7 +12,6 @@ RUN yum -y install nodejs
 RUN yum -y install git
 RUN yum install -y supervisor
 
-ADD supervisord.conf /etc/supervisord.conf
 
 RUN git clone https://github.com/MKFMIKU/DormitoryD.git
 
@@ -20,4 +19,4 @@ RUN cd DormitoryD; npm install --save
 
 EXPOSE 5000
 
-CMD ["/usr/bin/supervisord"]
+CMD ["run.sh"]
