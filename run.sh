@@ -1,5 +1,5 @@
 #!/bin/sh
 
-service mongod start
+/etc/rc.d/init.d/mongod start
 
-pm2 start DormitoryD/index.js
+pm2 start DormitoryD/index.js --name "server"
