@@ -21,5 +21,6 @@ ADD https://raw.githubusercontent.com/MKFMIKU/Docker/master/run.sh /home/run.sh
 EXPOSE 5000
 
 RUN mkdir -p /data/db
+RUN mkdir -p /log
 
 CMD ["sh", "/home/run.sh"]
