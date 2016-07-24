@@ -1,3 +1,3 @@
 service mongod start
 
-node DormitoryD/index.js
+pm2 start DormitoryD/index.js
