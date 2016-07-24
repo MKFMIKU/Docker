@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER MKFMIKU <mikumkf@outlook.com>
 
-COPY mongodb-org-3.2.repo /etc/yum.repos.d/mongodb-org-3.2.repo
+ADD https://raw.githubusercontent.com/MKFMIKU/Docker/master/mongodb-org-3.2.repo /etc/yum.repos.d/mongodb-org-3.2.repo
 
 RUN yum install -y mongodb-org
 
@@ -15,7 +15,7 @@ RUN git clone https://github.com/MKFMIKU/DormitoryD.git
 
 RUN cd DormitoryD; npm install --save
 
-ADD run.sh
+ADD https://raw.githubusercontent.com/MKFMIKU/Docker/master/run.sh run.sh
 
 EXPOSE 5000
 
